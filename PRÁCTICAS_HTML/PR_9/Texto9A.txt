@@ -1,0 +1,49 @@
+El formato JPEG es por lo tanto un excelente formato para las fotografías, especialmente las que no tienen tonos muy diferentes y degradados de colores pero hay que tener en cuenta los defectos ligados a la pérdida de datos y deformaciones en función del índice de compresión. Para evitar problemas derivados de esta característica se recomienda guardar siempre la copia original y trabajar con copias de la misma.
+
+La denominación de este formato corresponde a Joint Photographic Expert Group, es decir se corresponde a la corporación que ha desarrollado el formato. Es el formato más extendido en el mundo de la fotografía digital.
+
+El nombre del formato PNG corresponde a Portable Network Graphics y se presenta como el formato del futuro. Se trata de un formato gráfico concebido especialmente para la aplicación en la Web. En principio PNG debe reunir las ventajas del formato GIF y del formato JPEG.
+
+Permite variar el índice de compresión según las necesidades del diseñador. Una compresión de 15 a 20% producirá una imagen de calidad satisfactoria para un tamaño de archivo reducido.
+
+Su compresión es elevada y se efectúa sin pérdida de datos y de calidad.
+
+Ofrece la posibilidad de transparencia
+
+Su función entrelazada permite una visualización progresiva
+
+Con este formato no se pueden generar imágenes animadas.
+
+Se prevé que este formato PNG se utilizará cada vez más ya que los profesionales lo han adoptado en lugar del GIF y para fotos pequeñas.
+
+Por todas estas características, el formato GIF no es apropiado para los gráficos de alta resolución como las fotos. En cambio sigue siendo un buen formato para los logotipos pequeños, botones, marcas, barras, símbolos y otros cliparts frecuentes para ciertos gráficos de la Web que no necesitan una paleta de colores muy extensa.
+
+Este formato acepta 16,7 millones de colores al igual que el formato JPEG.
+
+Este formato permite guardar hasta 16,7 millones de colores por imagen.
+
+La compresión se realiza sin pérdida de datos ni pérdida de calidad.
+
+El formato GIF permite codificar imágenes con un máximo de 256 colores, lo que no se adecua a la realidad con los desarrollos y las posibilidades de la imagen digital.
+
+La pega que tiene es que existe una pérdida de calidad en función del índice de compresión. Cuanto más elevado es el factor de compresión, peor es la calidad de la imagen.
+
+Aparecen deformaciones (artifacts) en las esquinas y bordes de los objetos.
+
+Incorpora desde hace algunos años la función entrelazada lo que permite la visualización progresiva y más rápida en la Web.
+
+Se trata de un formato de compresión eficaz y rápido.
+
+Su índice de compresión es eficaz en relación al tamaño resultante.
+
+La función llamada entrelazada permite una visualización rápida de imágenes que van ganando nitidez progresivamente.
+
+Existe la posibilidad de definir uno de los 256 colores como transparente lo que permite hacer visibles los elementos situados bajo el gráfico en las zonas donde la imagen es transparente.
+
+Por su reducido número de colores, las imágenes son fácilmente editables y modificables.
+
+Es el único formato que permite construir animaciones, pequeños dibujos animados (GIFs animados)
+
+Este formato no ofrece posibilidad de transparencia.
+
+

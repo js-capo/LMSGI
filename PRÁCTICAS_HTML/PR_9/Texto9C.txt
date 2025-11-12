@@ -1,0 +1,24 @@
+Alineación de imágenes
+
+La etiqueta img también soporta el atributo align, su uso no es recomendado, y se recomienda el uso de la propiedad float de CSS. Sin embargo esta propiedad aún no es soportada por todos los navegadores.
+
+Para mantener un documento acorde al estricto uso de elementos XHTML 1.0 utilizaremos esta propiedad CSS en lugar del atributo align
+Propiedad float de CSS
+
+style="float:right"
+
+Probamos a insertar la siguiente etiqueta en la celda de abajo:
+ 
+En lugar de los puntos suspensivos insertaremos el texto que se ve a continuación:
+
+Tux, el pingüino de Linux Tux es el nombre de la mascota oficial del kernel Linux. Tux es un pequeño pingüino de aspecto risueño. La idea de que la mascota de Linux fuera un pingüino provino del mismo Linus Torvalds, creador de Linux. Según se cuenta, cuando era niño le picó un pingüino, y le resultó simpática la idea de asociar un pingüino a su proyecto. Existen dos versiones sobre el origen de su nombre. La primera sugiere que el nombre surge del hecho de que los pingüinos parecen vestir un esmoquín (en inglés tuxedo). La segunda es que las letras que componen Tux provienen de las palabras Torvalds Unix.
+
+style="float:left"
+
+Ahora probamos a insertar la siguiente etiqueta en la celda de abajo:
+
+
+En lugar de los puntos suspensivos insertaremos el texto que se ve a continuación:
+
+Tux, el pinguino de Linux Tux es el nombre de la mascota oficial del kernel Linux. Tux es un pequeño pingüino de aspecto risueño. La idea de que la mascota de Linux fuera un pingüino provino del mismo Linus Torvalds, creador de Linux. Según se cuenta, cuando era niño le picó un pingüino, y le resultó simpática la idea de asociar un pingüino a su proyecto. Existen dos versiones sobre el origen de su nombre. La primera sugiere que el nombre surge del hecho de que los pingüinos parecen vestir un esmoquín (en inglés tuxedo). La segunda es que las letras que componen Tux provienen de las palabras Torvalds Unix. 
+

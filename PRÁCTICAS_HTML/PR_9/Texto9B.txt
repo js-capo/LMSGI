@@ -1,0 +1,50 @@
+La etiqueta <img>
+
+    Ejemplo 1:
+    Atributo src y atributo alt
+     
+    Resultado:
+
+    ...
+	
+	
+		
+    Ejemplo 2:
+    Atributo altura height y atributo anchura width
+    
+    Resultado:
+
+    ...
+	
+	
+	
+    Ejemplo 3:
+    Atributo altura height y atributo anchura width
+    
+    Resultado:
+
+    ...
+	
+	
+    Ejemplo 4:
+    Atributo altura height y atributo anchura width
+     
+    Resultado: Bordes pixelados
+
+    ...
+	
+	
+    Ejemplo 5:
+    Atributo altura height y atributo anchura width
+    
+    Resultado: Imagen deformada
+
+    ...
+	
+	
+    Ejemplo 6:
+    Atributo altura height y atributo anchura width
+     
+    Resultado: se mantiene la proporción ya que el valor ausente de width es calculado automáticamente (aunque para calcular el espacio debería obtener la imagen primero, con la consecuente perdida de tiempo en el renderizado final del documento)
+	
+	...

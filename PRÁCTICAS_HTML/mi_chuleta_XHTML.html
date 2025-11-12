@@ -142,6 +142,10 @@ align="valor" --> "left" - "center" - "right" <!-- Alineación horizontal de la 
 valign="valor" --> "top" - "middle" - "bottom" – <!-- Alineación vertical de la fila -->
 "baseline" 
 <td>...</td> <!-- E.B. --> <!-- Parte de la etiqueta <table>, indica el número de CELDAS en una fila. -->
+align="valor" --> "left" - "center" - "right"
+valign="valor"--> "top" - "middle" - "bottom"
+
+"baseline"
 
 colspan="no" <!-- ="0" o ="1" --> <!-- Fusión de columnas horizontalmente --> <!-- Va con la etiqueta <td> -->
 rowspan="no" <!-- ="0" o ="1" --> <!-- Fusión de columnas verticalmente --> <!-- Va con la etiqueta <td> -->
@@ -149,15 +153,18 @@ rowspan="no" <!-- ="0" o ="1" --> <!-- Fusión de columnas verticalmente --> <!-
 
 
 
-<img ......... />
-src=”ruta_imagen”
-alt=”texto”
-title=”texto”
-height=”no”
-width=”no”
-longdesc=”archivo”
+<img ......... /> <!-- Etiqueta de autocierre (NO TIENE TEXTO) --> <!-- Sirve para añadir imágenes -->
+src=”ruta_imagen” <!-- Ruta de la imagen -->
+alt=”texto” <!-- Texto que aparecerá en lugar de la imagen si no carga -->
+title=”texto” <!-- ??? -->
+height=”no” <!-- Ajustar la altura de la imagen -->
+width=”no” <!-- Ajustar la anchura de la imagen -->
+longdesc=”archivo” <!-- Es como la etiqueta summary en las tablas, sirve para dar una descripción de la imagen a personas con dificultades de vista -->
+Propiedad float (estilos)
+style="float:left" <!-- Desplazar la imagen a la izquierda -->
+style="float:right" <!-- Desplazar la imagen a la derecha -->
 
-Resumen etiquetas XHTML
+
 <form>...</form>
 method="método_envío"
 action="url"

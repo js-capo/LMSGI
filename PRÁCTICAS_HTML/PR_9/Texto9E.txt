@@ -1,0 +1,37 @@
+Comparativas y repaso
+Índice
+
+Comparativa reproductores MP3 [Ver apartado]
+Comparativa dispositivos modernos de audio [Ver apartado]
+Requisitos de dispositivos modernos de audio [Ver apartado]
+Repositorio últimas prácticas [Ver apartado]
+
+
+Comparativa de Dispositivos Modernos de Audio
+Dispositivos de Audio y Conectividad Dispositivo 	Uso Principal 	Conectividad
+Almacenamiento Local 		Streaming
+Smartphone 	  	  			Wi-Fi, Bluetooth, Red móvil
+Altavoz Inteligente 	  	Wi-Fi, Bluetooth
+
+
+Requisitos de un Sistema de Audio Moderno
+
+Experiencia de Usuario (UX)
+Interfaz intuitiva
+Búsqueda por voz
+Calidad y Formato
+Conectividad y Redes
+
+Revisión: Enlaces a Prácticas Anteriores con Tablas e imágenes
+
+Prácticas 8: Temática Tablas
+Práctica 8 - A-G
+Práctica 8 - H
+Práctica 8 - I
+Prácticas 9: Temática Imágenes
+Práctica 9 - A
+Práctica 9 - B
+Práctica 9 - C
+Práctica 9 - D
+
+Volver a inicio 
