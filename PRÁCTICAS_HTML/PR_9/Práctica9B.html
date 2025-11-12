@@ -7,13 +7,61 @@
 	</head>
 	
 	<body>
+		<h1>La etiqueta &lt;img&gt;</h1>
+		<ol>
+			<li>
+				Ejemplo 1: <br />
+				Atributo <code>src</code> y atributo <code>alt</code> <br />
+				<code>&lt;img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" /&gt;</code> <br />
+				Resultado: <br />
+				<img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" />
+			</li>
 
 
-	
-
-
-
-
+			<li>
+				Ejemplo 2: <br />
+				Atributo altura<code>height</code> y atributo anchura <code>width</code> <br />
+				<code>&lt;img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="298" width="249" /&gt;</code> <br />
+				Resultado: <br />
+				<img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="298" width="249" />
+			</li>
+			
+			
+			<li>
+				Ejemplo 3: <br />
+				Atributo altura<code>height</code> y atributo anchura <code>width</code> <br />
+				<code>&lt;img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="120" width="100" /&gt;</code> <br />
+				Resultado: <br />
+				<img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="120" width="100" />
+			</li>
+			
+			
+			<li>
+				Ejemplo 4: <br />
+				Atributo altura<code>height</code> y atributo anchura <code>width</code> <br />
+				<code>&lt;img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="479" width="400" /&gt;</code> <br />
+				Resultado: Bordes pixelados<br />
+				<img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="479" width="400" />
+			</li>
+			
+			
+			<li>
+				Ejemplo 5: <br />
+				Atributo altura<code>height</code> y atributo anchura <code>width</code> <br />
+				<code>&lt;img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="100" width="300" /&gt;</code> <br />
+				Resultado: Imagen deformada<br />
+				<img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="100" width="300" />
+			</li>
+			
+			
+			<li>
+				Ejemplo 6: <br />
+				Atributo altura<code>height</code> y atributo anchura <code>width</code> <br />
+				<code>&lt;img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="100" /&gt;</code> <br />
+				Resultado: se mantiene la proporción ya que el valor ausente de <code>width</code> es calculado automáticamente (aunque para calcular el espacio debería obtener la imagen primero, con la consecuente perdida de tiempo en el renderizado final del documento)<br />
+				<img src="Imágenes/tux.png" alt="Tux, el pingüino de Linux" height="479" width="400" />
+			</li>
+		</ol>
 	</body>	
 </html>
 
