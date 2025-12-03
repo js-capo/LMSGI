@@ -166,12 +166,25 @@ style="float:right" <!-- Desplazar la imagen a la derecha -->
 
 
 <form>...</form> <!-- Hay que aplicarlo a TODA la página, porque se considera una página ENTERA como un formulario -->
-method="método_envío" <!-- Método get (rápido pero menos seguro) o post -->
-action="url"
-enctype="tipo_codificación"
-accept-charset="juego_caracteres"
-accept="tipo-MIME"
-<input type=”text” />
+method="método_envío" <!-- IMPORTANTE: Método get (rápido pero menos seguro) o post (el que hay que usar, sobre todo con GOOGLE [es más lento, pero seguro])-->
+action="url" <!-- IMPORTANTE: Qué quiero pasar cuando se haga CLICK (btn submit) (se suele poner para enviar a un CORREO [mailTo]) -->
+enctype="tipo_codificación" <!-- AHORA NO -->
+accept-charset="juego_caracteres" <!-- AHORA NO -->
+accept="tipo-MIME" <!-- AHORA NO -->
+
+
+<input type=”text” /> <!-- E.L. --> <!-- Cuadro de texto -->
+name="nombre" <!-- IMPORTANTE -->
+size="no"  <!-- Designar el ancho -->
+maxlength="no" <!-- Cómo de largo puede ser el texto -->
+value="valor" <!-- Ej. "Escribe tu nombre..." -->
+readonly="readonly" <!-- Texto que solo se puede leer (para cuando se quieren confirmar los datos) -->
+disabled="disabled" <!-- Apariencia: para que el texto aparezca deshabilitado -->
+accesskey="tecla"
+tabindex="no"
+
+
+<input type=”password” /> <!-- E.L. --> <!-- Lo mismo que el de arriba, pero pa' contraseñas -->
 name="nombre"
 size="no"
 maxlength="no"
@@ -180,16 +193,9 @@ accesskey="tecla"
 tabindex="no"
 readonly="readonly"
 disabled="disabled"
-<input type=”password” />
-name="nombre"
-size="no"
-maxlength="no"
-value="valor"
-accesskey="tecla"
-tabindex="no"
-readonly="readonly"
-disabled="disabled"
-<textarea>...</textarea>
+
+
+<textarea>...</textarea> <!-- E.L. --> <!-- Lo mismo que el input type text, pero más para DESCRIPCIONES o textos EXTENSOS -->
 name="nombre"
 rows="no"
 cols="no"
@@ -197,31 +203,41 @@ accesskey="tecla"
 tabindex="no"
 readonly="readonly"
 disabled="disabled"
-<input type=”submit” />
+
+
+<input type=”submit” /> <!-- E.L. --> <!-- Enviar datos -->
+name="nombre" <!-- EVITAR PONER EN ESTE -->
+value="valor"
+accesskey="tecla"
+tabindex="no"
+disabled="disabled"
+
+
+<input type=”reset” /> <!-- E.L. --> <!-- Pa' anular la entrada de datos :P -->
 name="nombre"
 value="valor"
 accesskey="tecla"
 tabindex="no"
 disabled="disabled"
-<input type=”reset” />
-name="nombre"
-value="valor"
-accesskey="tecla"
-tabindex="no"
-disabled="disabled"
-<select>...</select>
+
+
+<select>...</select> <!-- E.L. -->
+
+	<option>...</option> <!-- Dentro de la etiqueta <select> -->
+	value="valor"
+	selected="selected"
+	disabled="disabled"
+	
+	<optgroup>...</optgroup > <!-- Grupo de opciones con título -->
+	label="nombre"
+	
 name="nombre"
 size="no"
 accesskey="tecla"
 tabindex="no"
 multiple="multiple"
 disabled="disabled"
-<option>...</option>
-value="valor"
-selected="selected"
-disabled="disabled"
-<optgroup>...</optgroup >
-label="nombre"
+
 
 <input type=”radio” />
 name="nombre"
@@ -231,6 +247,8 @@ tabindex="no"
 checked="checked"
 readonly="readonly"
 disabled="disabled"
+
+
 <input type=”checkbox” />
 name="nombre"
 value="valor"
@@ -239,15 +257,25 @@ tabindex="no"
 checked="checked"
 readonly="readonly"
 disabled="disabled"
+
+
 <fieldset>...</fieldset>
+
+
 <legend>...</legend>
+
+
 <label>...</label>
 for="valor_id"
+
+
 <input type=”file” />
 name="nombre"
 size="no"
 maxlength="no"
 accept="tipo/*"
+
+
 <input type=”button” />
 name="nombre"
 value="valor"
