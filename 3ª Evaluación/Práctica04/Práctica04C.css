@@ -1,0 +1,58 @@
+h1 {
+	text-decoration:overline;
+	color:#069306;
+	font-family:arial;
+	letter-spacing:10pt;
+	font-size:24pt;
+	font-variant:small-caps;
+	font-weight:bold;
+}
+
+#titulo_encabezado {
+	text-align:center;
+	width:20%;
+}
+
+#ejplo1 {
+	vertical-align:baseline;
+}
+
+#ejplo2 {
+	vertical-align:sub;
+}
+
+#ejplo3 {
+	vertical-align:super;
+}
+
+#ejplo4 {
+	vertical-align:top;
+}
+
+#ejplo5 {
+	vertical-align:text-top;
+}
+
+#ejplo6 {
+	vertical-align:middle;
+}
+
+#ejplo7 {
+	vertical-align:bottom;
+}
+
+#ejplo8 {
+	vertical-align:text-bottom;
+}
+
+#ejplo9 {
+	vertical-align:1em;
+}
+
+#ejplo10 {
+	vertical-align:-1em;
+}
+
+#ejplo11 {
+	vertical-align:90%;
+}

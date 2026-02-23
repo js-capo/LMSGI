@@ -7,3 +7,28 @@ h1 {
 	font-variant:small-caps;
 	font-weight:bold;
 }
+
+h2 {
+	word-spacing:-2pt;
+	text-transform:capitalize;
+}
+
+em {
+	text-transform:uppercase;
+}
+
+p {
+	text-indent:24pt;
+}
+
+#par3, #par4 {
+	word-spacing:8pt;
+}
+
+#par3 {
+	line-height:1.5em;
+}
+
+#par4 {
+	white-space:nowrap;
+}

@@ -1,0 +1,29 @@
+h1 {
+	text-decoration:overline;
+	color:#0D8FCF;
+	font-family:arial;
+	letter-spacing:10pt;
+	font-size:24pt;
+	font-variant:small-caps;
+	font-weight:bold;
+}
+
+#titulo {
+	text-align:center;
+}
+
+#col1{
+	text-align:left;
+}
+
+#col2{
+	text-align:right;
+}
+
+#col3{
+	text-align:center;
+}
+
+#col4{
+	text-align:justify;
+}
