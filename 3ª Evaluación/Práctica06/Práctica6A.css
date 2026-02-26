@@ -1,0 +1,18 @@
+body {
+	background-color:#a9cb88;
+	background-image:url("Images/bg1.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+	color:white;
+}
+
+h1 {
+	text-align:center;
+	text-decoration:overline;
+	color:white;
+	letter-spacing:10px;
+	font-size:24px;
+	font-variant:small-caps;
+	font-weight:bold;
+}
