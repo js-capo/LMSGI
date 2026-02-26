@@ -1,0 +1,41 @@
+body {
+	background-image:url("Images/bg.gif");
+}
+
+td {
+	width:25%;
+	vertical-align:top;
+	text-align:justify;
+}
+
+h1 {
+	font-family:arial;
+	font-size:24px;
+	font-variant:small-caps;
+	font-weight:bold;
+	color:#b0c4de;
+	text-decoration:overline;
+	text-align:center;
+	letter-spacing:10px;
+}
+
+.celda1 {
+	background-color:#b0c4de;
+}
+
+.celda2 {
+	background-color:white;
+	background-image:url("Images/k1.gif");
+	background-repeat:repeat;
+}
+
+.celda3 {
+	background-color:white;
+	background-image:url("Images/k6.gif");
+	background-position:center;
+}
+
+.celda4 {
+	background-color:white;
+	background-image:url("Images/k3.gif");
+}
