@@ -1,0 +1,27 @@
+body {
+	font-family:arial;
+	font-size:15px;
+	letter-spacing:2px;
+}
+
+h1 {
+	color:#069306;
+	text-decoration:overline;
+	text-align:center;
+	letter-spacing:10px;
+	font-size:24px;
+	font-variant:small-caps;
+	font-weight:bold;
+}
+
+ol {
+	list-style-type:lower-latin;
+}
+
+ul {
+	list-style-type:disc;
+}
+
+ol ul ul {
+	list-style-image:url("images/4.gif");
+}

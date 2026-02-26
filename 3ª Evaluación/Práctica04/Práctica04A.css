@@ -1,9 +1,9 @@
 h1 {
 	text-decoration:overline;
 	color:#0D8FCF;
-	word-spacing:10pt;
+	word-spacing:10px;
 	font-family:arial;
-	font-weight:24;
+	font-size:24px;
 	font-variant:small-caps;
 	font-weight:bold;
 }
