@@ -1,0 +1,77 @@
+h1 {
+	font-size:2em;
+	font-variant:small-caps;
+	color:#556975;
+	letter-spacing:5px;
+	text-align:center;
+}
+
+h2 {
+	font-size:1em;
+	font-variant:small-caps;
+	color:#556975;
+	letter-spacing:5px;
+	text-align:center;
+}
+
+#titulo {
+	width:auto;
+	background-color:#FFFFDD;
+	border-color:black;
+	border-width:medium;
+	border-style:solid;
+}
+
+#caja1 {
+	background-color:rgb(249,250,226, 0.85);
+	width:25%;
+}
+
+#caja2 {
+	background-color:rgb(225,247,140, 0.75);
+	background-image:url("Images/k3.gif");
+	background-repeat:no-repeat;
+	background-position:center;
+	width:25%;
+	border-width:thin;
+	text-align:justify;
+	border-style:solid;
+}
+
+#caja3 {
+	background-color:rgb(176,215,247, 0.5);
+	background-image:url("Images/k3.gif");
+	background-position:center;
+	width:75%;
+	border-width:thin;
+	border-style:dotted;
+	text-align:center;
+}
+
+#caja4 {
+	background-image:url("Images/k3.gif");
+	width:100%;
+	border-width:thin;
+	border-style:dashed;
+	text-align:left;
+}
+
+#pie {
+	text-align:center;
+	background-color:rgb(99,120,122);
+	border-width:.25em;
+	border-style:solid;
+	border-color:#556975;
+	color:white;
+}
+
+.destacado {
+	background-color:#FFFFAD;
+	font-weight:bold;
+	font-style:italic;
+	font-variant:small-caps;
+}
+
+body {
+	font-family:arial;
+}
