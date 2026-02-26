@@ -5,9 +5,9 @@ body {
 }
 
 h1 {
-	color:#069306;
-	text-decoration:overline;
 	text-align:center;
+	text-decoration:overline;
+	color:#069306;
 	letter-spacing:10px;
 	font-size:24px;
 	font-variant:small-caps;
@@ -24,4 +24,5 @@ ul {
 
 ol ul ul {
 	list-style-image:url("images/4.gif");
+	color:#069306;
 }
