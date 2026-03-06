@@ -1,0 +1,17 @@
+body {
+	font-family:arial;
+}
+
+#encabezado {
+	margin:auto;
+}
+
+#contenido {
+	width:670px;
+	text-align:justify;
+	margin:auto;
+}
+
+#cuerpo {
+	text-align:left;
+}
