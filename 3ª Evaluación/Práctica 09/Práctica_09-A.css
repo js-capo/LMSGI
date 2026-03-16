@@ -1,0 +1,18 @@
+h1 {
+	font-family:arial;
+	font-size:28px;
+	font-variant:small-caps;
+	color:#07A;
+	letter-spacing:3px;
+	text-align:center;
+	margin:50px 0;
+}
+
+table {
+	width:80%;
+	margin:20px 0;
+	border-style:solid;
+	border-width:1px;
+	border-color:#0077AA;
+	caption-side:bottom;
+}
