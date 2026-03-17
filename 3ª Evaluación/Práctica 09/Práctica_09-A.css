@@ -1,18 +1,63 @@
+/*PASO 1*/
+
 h1 {
-	font-family:arial;
-	font-size:28px;
-	font-variant:small-caps;
-	color:#07A;
-	letter-spacing:3px;
-	text-align:center;
-	margin:50px 0;
+    font-family:arial;
+    font-size:28pt;
+    font-variant:small-caps;
+    color:#07A;
+    letter-spacing:3pt;
+    text-align:center;
+    margin-top:50pt;
+    margin-bottom:50pt;
 }
 
 table {
-	width:80%;
-	margin:20px 0;
-	border-style:solid;
-	border-width:1px;
-	border-color:#0077AA;
-	caption-side:bottom;
+    width:80%;
+    margin:20pt auto;
+    border:1pt solid #07A;
+    caption-side:bottom;
+	border-collapse: collapse; /*PASO 3*/
+}
+
+/*PASO 2*/
+
+th, td {
+    border: 1pt solid #07A;
+    padding: 10pt;
+    text-align: center;
+}
+
+/*PASO 4*/
+
+th {
+    background-color:#444;
+    color:white;
+    text-transform:uppercase;
+}
+
+/*PASO 5*/
+
+caption {
+    font-size:50%;
+    font-weight:bold;
+    letter-spacing:2pt;
+}
+
+/*PASO 6*/
+
+body {
+    font-family:arial;
+}
+
+/*PASO 7*/
+
+tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/*PASO 8*/
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
