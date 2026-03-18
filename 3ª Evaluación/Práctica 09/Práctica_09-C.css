@@ -5,7 +5,7 @@ body {
 h1 {
     text-align:center;
     color:#0077AA;
-    text-transform:uppercase;
+    font-variant:small-caps;
     letter-spacing:5px;
 }
 
@@ -14,8 +14,10 @@ table {
     border:1px solid #191970;
     background-color:#EFEFFF;
     border-collapse:separate;
-    border-spacing:10px 5px;
+    border-spacing:10px;
+	empty-cells:hide;
     caption-side:bottom;
+	width:60%;
 }
 
 caption {
@@ -28,7 +30,7 @@ thead th {
     background-color:#0077AA;
     color:#FFFFFF;
     padding:5px 15px;
-    text-transform:uppercase;
+    font-variant:small-caps;
     font-size:0.9em;
     border:none;
 }
@@ -41,16 +43,16 @@ tbody th {
 
 tbody td {
     background-color:#FFFFFF;
-    border:1px solid #CCCCCC;
+    border:1px inset #CCCCCC;
     padding:5px;
-    text-align:center;
+    text-align:right;
     min-width:40px;
 }
 
 tfoot th {
     background-color:#0077AA;
     color:#FFFFFF;
-    text-transform:uppercase;
+    font-variant:small-caps;
     padding:5px;
 }
 
