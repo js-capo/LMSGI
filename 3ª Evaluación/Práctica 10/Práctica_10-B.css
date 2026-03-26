@@ -38,12 +38,34 @@ h1 {
 	border-width:thin;
 	text-align:justify;
 	/* Práctica 8A */
-	padding-left:20px;
-	padding-right:20px;
+	/*padding-left:20px;
+	padding-right:20px; Comentado, porque ya no son necesarios*/
 	margin-left:5px;
 	margin-right:5px;
+	/*Práctica 10B*/
+	margin-bottom:25px;
+	padding: 10px 20px;
 }
 .destacado 	{
 	background-color:#FFFFAD;
 	font-weight:bold
+}
+
+/*NUEVO*/
+
+#pie {
+	border-style:solid;
+	color:white;
+	background-color:#778899;
+	border-width:thin;
+	border-color:black;
+	text-align:center;
+	padding: 10px 0;
+}
+
+#contenido {
+	font-family:arial;
+	width:100%;
+	position:static;
+	min-width:800px;
 }
