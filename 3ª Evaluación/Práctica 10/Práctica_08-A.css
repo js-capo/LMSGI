@@ -1,0 +1,49 @@
+body {font-family:arial}
+h1 {
+	font-variant:small-caps; 
+	font-weight:bold; 
+	font-size:2em;
+	color:#556975;
+	letter-spacing:5px;
+	text-align:center;
+}
+ 
+#encabezado {
+	width: auto;
+	height: 25%;
+	background-color:#FFFFDD;
+	border-width:medium;
+	border-style: double;
+	border-color:blue;
+	text-align:justify;
+	font-variant:small-caps;
+	/* Práctica 8A */
+	padding:15px;
+	margin-bottom:10px
+}
+#caja_izq {
+	background-color:#FFFFDD;
+	width:25%;
+	border-style: solid;
+	border-width:thin;
+	text-align:center;
+	/* Práctica 8A */
+	margin-bottom:5px;
+	padding-left:10px;
+	padding-right:10px
+}
+#caja_dcha {
+	width:65%;
+	border-style: solid;
+	border-width:thin;
+	text-align:justify;
+	/* Práctica 8A */
+	padding-left:20px;
+	padding-right:20px;
+	margin-left:5px;
+	margin-right:5px;
+}
+.destacado 	{
+	background-color:#FFFFAD;
+	font-weight:bold
+}

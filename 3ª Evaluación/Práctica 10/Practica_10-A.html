@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<title>Prueba Posicionamiento</title>
+		<style type="text/css">
+			/* 1 
+			#contenedor {width:75%;
+						margin:auto;
+						border-style:solid}
+			*/
+			
+			/* 2 
+			#cabecera, #pie {text-align:center;
+							border-style:solid;
+							background-color:#778899}
+			#piecontenedor {background-color:#888}
+			*/
+			
+			/* 3 STATIC --> No afectan left, right.... 
+			#caja0 {position:static;
+					background-color:green;
+					margin:5px}
+			#caja1 {position:static;
+					background-color:blue;
+					margin:5px;
+					left:100px}
+			#caja2 {position:static;
+					background-color:red;
+					margin:5px} 
+			*/
+			
+			/* 4 RELATIVE --> sí desplazan LEFT, RIGHT... con respecto a posición original de la caja
+			#caja0 {position:static;
+					background-color:green;
+					margin:5px}
+			#caja1 {position:relative;
+					background-color:blue;
+					margin:5px;
+					left:100px}
+			#caja2 {position:relative;
+					background-color:red;
+					margin:5px;
+					right:80px} 
+			*/
+			
+			/* 5a ABSOLUTE --> Los demás elementos las ignoran y pueden ocupar su lugar. Se posicionan con respecto al contenedor posicionado, en este caso ninguno, por lo tanto, con respecto a la página
+			#caja0 {position:static;
+					background-color:green;
+					margin:5px;
+					}
+			#caja1 {position:absolute;
+					background-color:blue;
+					margin:5px;
+					left:100px
+					}
+			#caja2 {position:absolute;
+					background-color:red;
+					margin:5px;
+					right:80px;
+					} 
+			*/
+			
+			/* 5b Quitamos el desplazamiento a la roja 
+			#caja0 {position:static;
+					background-color:green;
+					margin:5px}
+			#caja1 {position:absolute;
+					background-color:blue;
+					margin:5px;
+					left:100px
+					}
+			#caja2 {position:absolute;
+					background-color:red;
+					margin:5px;
+					
+					} 
+			*/
+			
+			/* 6a Otra vez desplazamiento a la roja pero el contenedor queda posicionado RELATIVE diferente a static. Ahora los desplazamientos de las absolutas se producen con respecto al contenedor porque está posicionado 
+			#contenedor {position:relative}
+			#caja0 {position:static;
+					background-color:green;
+					margin:5px}
+			#caja1 {position:absolute;
+					background-color:blue;
+					margin:5px;
+					left:100px
+					}
+			#caja2 {position:absolute;
+					background-color:red;
+					margin:5px;
+					right:80px
+					} 
+			*/
+					
+			/* 6b el contenedor posicionado ABSOLUTE por lo que deja de hacer caso al centrado 
+			
+			#contenedor {position:absolute}
+			#caja0 {position:static;
+					background-color:green;
+					margin:5px}
+			#caja1 {position:absolute;
+					background-color:blue;
+					margin:5px;
+					left:100px
+					}
+			#caja2 {position:absolute;
+					background-color:red;
+					margin:5px;
+					right:80px
+					} 
+			
+			*/
+			
+			/* 7 Contenedor RELATIVE de nuevo pero caja roja FIXED. Si reducimos el tamaño de la ventana, y hacemos scroll, queda fija y se encuentra posicionada respecto a la página 
+			#contenedor {position:relative}
+			#caja0 {position:static;
+					background-color:green;
+					margin:5px}
+			#caja1 {position:absolute;
+					background-color:blue;
+					margin:5px;
+					left:100px;
+					z-index:2
+					}
+			#caja2 {position:fixed;
+					background-color:red;
+					margin:5px;
+					right:80px;
+					} 
+			*/
+			
+			
+			/* 8 Quitamos posicionamientos y mitad de tamaño a la primera caja. Aunque hay sitio libre a la derecha, los demás bloques van debajo   
+			#caja0 {background-color:green;
+					margin:5px;
+					width:50%}
+			#caja1 {background-color:blue;
+					margin:5px;
+					left:100px
+					}
+			#caja2 {background-color:red;
+					margin:5px;
+					right:80px
+					} 
+			*/
+			
+			
+			/* 9a  Primera caja flotante a la izquierda. Las cajas de abajo se adaptan y ocupan el espacio adyacente a la caja flotante 
+			#caja0 {float:left;
+					background-color:green;
+					margin:5px;
+					width:50%}
+			#caja1 { 
+					background-color:blue;
+					margin:5px;
+					}
+			#caja2 { 
+					background-color:red;
+					margin:5px;
+					} 
+			*/
+			
+			/* 9b idem, flotante a la derecha 
+			#caja0 {float:right;
+					background-color:green;
+					margin:5px;
+					width:50%
+					}
+			#caja1 { 
+					background-color:blue;
+					margin:5px;
+					}
+			#caja2 { 
+					background-color:red;
+					margin:5px;
+					} 
+			*/
+			
+			 
+					
+			/* 9c de nuevo flotante a la izq y cambio de tamaño a la caja azul. Deja de estar adyacente 
+			#caja0 {float:left;
+					background-color:green;
+					margin:5px;
+					width:50%
+					}
+			#caja1 {  
+					background-color:blue;
+					margin:5px;
+					width:25%
+					}
+			#caja2 { 
+					background-color:red;
+					margin:5px;
+					} 
+			*/
+			
+			/* 9d la caja azul, pasa a flotar a la izquierda. Rdo inesperado para la caja no flotante 
+			#caja0 {float:left;
+					background-color:green;
+					margin:5px;
+					width:50%
+					}
+			#caja1 { float:left ;
+					background-color:blue;
+					margin:5px;
+					width:25%;
+					
+					}
+			#caja2 { 
+					background-color:red;
+					margin:5px;
+					} 
+			*/		
+			
+			/* 9e Las 3 cajas flotantes. Rdo inesperado del resto de las cajas 
+			#caja0 {float:left;
+					background-color:green;
+					margin:5px;
+					width:50%
+					}
+			#caja1 { float:left ;
+					background-color: blue;
+					margin:5px;
+					width:25%;
+					
+					}
+			#caja2 { float:left;
+					background-color:red;
+					margin:5px;
+					} 
+			*/
+			
+			/* 9f Las 3 cajas flotantes. el piecontenedor deja de hacer caso al comportamiento flotante de la izquierda de las cajas que le preceden
+			#caja0 {float:left;
+					background-color:green;
+					margin:5px;
+					width:50%
+					}
+			#caja1 { float:left ;
+					background-color: blue;
+					margin:5px;
+					width:25%;
+					
+					}
+			#caja2 { float:left;
+					background-color:red;
+					margin:5px;
+					} 
+			#piecontenedor {clear:left}	
+			*/
+			
+			/* 9g Cambio de tamaño para la caja roja 
+			#caja0 {float:left;
+					background-color:green;
+					margin:5px;
+					width:50%
+					}
+			#caja1 { float:left ;
+					background-color: blue;
+					margin:5px;
+					width:25%;
+					
+					}
+			#caja2 { float:left;
+					background-color:red;
+					margin:5px;
+					width:15%;
+					} 
+			#piecontenedor {clear:left}
+			*/
+			
+			/* 9h El pie contenedor deja de seguir el float por la derecha, que como no hay, en realidad es como configurar que siga teniendo en cuenta los float
+			#caja0 {float:left;
+					background-color:green;
+					margin:5px;
+					width:50%
+					}
+			#caja1 { float:left ;
+					background-color: blue;
+					margin:5px;
+					width:25%;
+					
+					}
+			#caja2 { float:left;
+					background-color:red;
+					margin:5px;
+					width:15%;
+					} 
+			#piecontenedor {clear:right} 
+			
+			*/
+			
+			/* 10 El pie contenedor deja de seguir el comportamiento flotante, por la izquierda y por la dcha 
+			#caja0 {float:left;
+					background-color:green;
+					margin:5px;
+					width:50%
+					}
+			#caja1 { float:left ;
+					background-color: blue;
+					margin:5px;
+					width:25%;
+					
+					}
+			#caja2 { float:left;
+					background-color:red;
+					margin:5px;
+					width:15%;
+					} 
+			#piecontenedor {clear:both}  
+			*/
+		</style>
+	</head>
+
+	<body>
+		<div id="cabecera">Cabecera</div>
+		<div id="contenedor">
+			<div id="caja0">
+			<h1>Prueba Posicionamiento</h1>
+			¿qué es lorem ipsum?
+			Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+			</div>
+			<div id="caja1">
+			¿qué es lorem ipsum?
+			Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+			</div>
+
+			<div id="caja2">
+			¿qué es lorem ipsum?
+			Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+			</div>
+			<div id="piecontenedor">Pie contenedor</div>
+		</div>
+		<div id="pie">Pie</div>
+	</body>
+</html>
