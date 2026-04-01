@@ -1,1 +1,88 @@
 /* Práctica 11-A */
+/*Paso I*/
+body {
+	font-family:arial, sans-serif;
+}
+
+/*Paso II*/
+h1 {
+	font-variant:small-caps;
+	font-weight:bold;
+	font-size:4em; /*Doble de tamaño*/
+	color:#556975;
+	letter-spacing:5px;
+	text-align:center;
+}
+
+/*Paso III*/
+h1, p, div {
+	border-style:solid;
+	border-width:1px;
+	margin: 10px 0;
+	border-color:blue; /*Para que se parezca más al resultado mostrado*/
+}
+
+/*Paso IV*/
+a, span {
+	border: solid 2px red;
+	width:200px;
+}
+
+/*Paso V*/
+p {
+	display:inline;
+	background-color:#e0f7fa;
+}
+
+/*Paso VI*/
+a {
+	display:block;
+	background-color:#fff9c4;
+	margin:5px 0;
+}
+
+/*Paso VII*/
+/*Opción 1*/
+#caja-vacía {
+	display:none;
+}
+
+/*Opción 2
+#caja-vacía {
+	visibility:hidden;
+} -- MARCADO COMO COMENTARIO PARA EVITAR CONFLICTOS*/
+
+/*Paso VIII*/
+#contenedor-cajas .caja {
+	width:100px;
+	height:100px;
+	color:white;
+	font-weight:bold;
+	display:flex; /*Etiqueta que permite la fácil alineación de elementos en una caja*/
+	justify-content:center; /*Alineación Horizontal*/
+	align-items:center; /*Alineación Vertical*/
+}
+
+#roja {
+	background-color:red;
+}
+
+#verde {
+	background-color:green;
+}
+
+#azul {
+	background-color:blue;
+}
+
+/*Paso IX*/
+#contenedor-cajas .caja {
+	display:inline-block;
+	text-align:center;
+	line-height:100px; /*Debe ser IGUAL a height para obtener alineación centrada*/
+}
+
+/*Paso X*/
+#contenedor-cajas {
+	text-align:center; /*Centra LAS CAJAS, no el texto en las cajas*/
+}
