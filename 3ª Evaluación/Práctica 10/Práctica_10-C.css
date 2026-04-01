@@ -1,0 +1,43 @@
+body {
+	font-family:arial
+}
+
+h1 {
+	font-variant:small-caps; 
+	font-weight:bold; 
+	font-size:2em;
+	color:#556975;
+	letter-spacing:5px;
+	text-align:center;
+}
+
+#boton_ayuda {
+  position: fixed; /* Se ancla el botón a la ventana del navegador, pero al principio aparece escondido. */
+  bottom: 30px; /* Estas dos propiedades sirven para mover la caja que está "escondida" en la ventana hacia una zona que sea visible*/
+  right: 30px;
+  background-color: #007bff;
+  width: 100px;
+  height: 40px;
+  color: white;
+  border-radius: 5px; /*Para cambiar la redondez de las esquinas del borde*/
+  display: flex; /*Para alinear fácilmente el texto en la caja (MODERNO)*/
+  justify-content: center; /*Para alinear HORIZONTALMENTE el contenido con display:flex*/
+  align-items: center; /*Para alinear VERTICALMENTE el contenido con display:flex*/
+  cursor: pointer; /*Para que, al pasar el cursor por encima, muestre una mano apuntando al objeto.*/
+}
+
+#notify_ball {
+  position: absolute; /*Busca a su "padre" más cercano en el HTML que tenga un posicionamiento definido (nuestro botón azul tiene fixed, así que le sirve)*/
+  top: -8px; /*Toma el borde superior del botón azul como punto de partida y sube la bolita 8 píxeles. Al ser un valor negativo, se sale hacia fuera del botón por arriba.*/
+  right: -8px; /*Toma el borde derecho del botón azul como punto de partida y empuja la bolita 8 píxeles hacia la derecha. Al ser negativo, se sale hacia fuera por la derecha.*/
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /*Para cambiar la redondez de las esquinas del borde , es básicamente un círculo ahora.*/
+  background-color: red;
+  display: flex; /*La alineación mencionada en el botón ayuda.*/
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
