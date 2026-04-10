@@ -5,12 +5,13 @@ body {
 }
 
 #contenedor {
-	background-color:white;
+	/*opacity:0.92; NO porque sino TODO se vuelve transparente!!*/
+	background-color:rgba(255, 255, 255, 0.90); /*Canal α: RGBα (Opacidad)*/
 	width:70%;
+	height:750px;
 	min-width:850px;
 	margin:auto;
 	padding:80px;
-	opacity:0.92;
 }
 
 h1 {
@@ -23,15 +24,47 @@ h1 {
 }
 
 #menu a {
-
 	padding:5px;
 	margin-right:10px;
 }
 
 #caja_izq {
+	background-color:#FFFFDD;
 	width:25%;
+	border: 1px solid gray;
+	margin: 10px 0;
+	padding: 5px;
+	text-align:center;
+	float:left; /*Se colocará a la izquierda*/
 }
 
 #caja_dcha {
-	width:65%;
+	width:70%;
+	border: 1px solid gray;
+	margin: 10px 0;
+	padding: 10px;
+	text-align:justify;
+	float:right; /*Se colocará a la derecha*/
+}
+
+#pie {
+	background-color:#C7C1B1;
+	color:white;
+	padding:15px;
+	text-align:center;
+	letter-spacing:2px;
+	clear:both;
+}
+
+.destacado {
+	background-color:#FFFFAD;
+	font-weight:bold;
+}
+
+.botonMenu {
+	
+}
+
+#activobotonMenu {
+	background-color:#0E7C9B;
 }
