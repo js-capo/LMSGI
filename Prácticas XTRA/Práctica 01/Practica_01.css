@@ -1,0 +1,57 @@
+/* 1. DEFINICIÓN DE VARIABLES (Ámbito global) */
+:root {
+    /* Colores */
+    --color-principal: #333;
+    --color-secundario: #007bff;
+    --color-fondo: #f4f4f4;
+    --color-acento: #e0f7fa;
+    
+    /* Espaciados y medidas */
+    --padding-estandar: 20px;
+    --radio-borde: 10px;
+}
+
+/* 2. ESTILOS BASE (Desktop First) */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: var(--color-fondo); 
+}
+
+header, footer { 
+    background-color: var(--color-principal); 
+    color: white; 
+    text-align: center; 
+    padding: var(--padding-estandar); 
+    /* Una sombra suave (box-shadow) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
+
+main {
+    width: 90%;
+    max-width: 1200px; /* Evita que en pantallas gigantes se estire demasiado */
+    margin: var(--padding-estandar) auto;
+    text-align: center;  /* Centra los elementos inline-block */
+}
+
+.contenido, aside {
+	 display: inline-block;
+	 padding: var(--padding-estandar);
+	 vertical-align: top;
+	 border-radius: var(--radio-borde); /* Bordes ligeramente redondeados */
+	 box-sizing: border-box; /* Para el cálculo de anchos */
+}
+
+.contenido {
+    width: 65%;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+aside {
+    width: 30%;
+    margin-left: 2%; /* Pequeño margen entre columnas */
+    background-color: var(--color-acento);
+    border: 1px solid var(--color-secundario);
+}
