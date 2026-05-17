@@ -1,7 +1,7 @@
 /* 1. DEFINICIÓN DE VARIABLES (Ámbito global) */
 :root {
     /* Colores */
-    --color-principal: #333;
+    --color-principal: Orange;
     --color-secundario: #007bff;
     --color-fondo: #f4f4f4;
     --color-acento: #e0f7fa;
@@ -54,4 +54,18 @@ aside {
     margin-left: 2%; /* Pequeño margen entre columnas */
     background-color: var(--color-acento);
     border: 1px solid var(--color-secundario);
+}
+
+/* 3. DISEÑO ADAPTABLE (Media Query) */
+@media screen and (max-width: 768px) {
+	.contenido, aside {
+		display: block; /* Cambian de fila a columna */
+		width: 100%; /* Ocupan todo el ancho del móvil */
+		margin: 10px 0;
+		margin-left: 0; /* Quitamos el margen lateral del
+						escritorio */
+	}
+	header h1 {
+		font-size: 1.5rem; /* Tamaño fijo para móvil */
+	}
 }
