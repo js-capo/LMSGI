@@ -1,0 +1,77 @@
+:root {
+    --primario: #4a90e2;
+    --secundario: #f5a623;
+    --fondo: #f0f2f5;
+    --blanco: #ffffff;
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: var(--fondo); 
+    margin: 0; 
+}
+
+* {
+    box-sizing: border-box; /* para que no se sobrepase en ningún caso los bordes */
+}
+
+header, footer { 
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 15px; 
+}
+
+/* EL CONTENEDOR FLEX */
+.flex-container {
+    display: flex; /* Activar Flexbox para gestionar los elementos del contenedor*/
+    background-color: var(--blanco);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    min-height: 400px; /* Para observar la alineación vertical */
+    border: 2px dashed #ccc;
+
+    /* Propiedades de alineación para pruebas */
+    flex-direction: row; /* Dirección de los elementos en fila / horizontal*/
+    justify-content: center; /* Alineación en el eje principal (horizontal) */
+    align-items: center; /* Alineación en el eje secundario (vertical) */
+}
+
+/* LOS ELEMENTOS HIJOS */
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primario);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+    
+    /* Flexbox también sirve para centrar el número/texto dentro de la caja */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-2 {
+    background-color: var(--secundario); /* Destacamos una de las cajas para pruebas */
+	/* order:5; */
+	/* flex-grow:1; */
+}
+
+/* --- RESPONSIVE / MÓVIL --- */
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+        min-height: auto;       /* Permite que el contenedor crezca según el contenido en móvil */
+        padding: 10px;          /* Opcional: reduce un poco el padding en pantallas pequeñas */
+    }
+
+    .caja {
+        /* Opcional: si quieres ajustar el tamaño de las cajas en móvil lo puedes hacer aquí */
+        margin: 8px 0;          /* Ajusta el espacio vertical entre las cajas */
+    }
+}
+

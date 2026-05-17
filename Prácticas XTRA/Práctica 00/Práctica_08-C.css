@@ -1,0 +1,97 @@
+body {
+	font-family:arial; 
+}
+
+#contenedor {
+	width:670px;
+	margin:auto;
+	text-align:justify;
+	 
+}
+
+h1, h2 {
+	font-variant:small-caps;  
+	color:#0077AA;  
+	letter-spacing:5px;  
+	font-size: 36px; /* para probar */
+	text-align:center;  
+	width:670px;
+	margin-top:50px;  /* para probar */
+	margin-bottom:50px;   /* para probar */
+}
+
+h2 {
+	font-size:14px;
+	margin-top:25px;  
+	margin-bottom:25px; 
+}
+	
+	
+#bordes_encabezado {
+	border-top-style:solid;
+	border-bottom-style:solid;
+	border-top-width:2px;
+	border-bottom-width:2px;
+	border-color:#0077AA; 
+	padding:20px 0px;
+	height:80px; /* raro */
+	width:670px;
+}
+#encabezado {
+	margin:auto;
+	width:580px;
+}
+
+.peke {
+	width:120px;
+	height:90px;
+	opacity:0.5;
+	margin:0 10px;
+}
+
+#activa {
+	border-style:solid;
+	border-width:1px;
+	border-color:#07A;
+	opacity:1;
+	
+}
+
+.peke:hover,#activa:hover {
+	opacity:0.85;
+	cursor:hand;
+}
+
+.peke:active,#activa:active {
+	opacity:0.25;
+	cursor:wait;
+}
+
+#contenedorimagen img {
+	width:100%;
+}
+
+#contenedorimagen { /* hace falta el contenedor para que centre la imagen si la imagen no la centra con el margin auto. Recomendable, la imagen al 100% dentro del contenedor y dar tamaño al contenedor.*/
+	width:500px;
+	margin:20px auto;
+	transition: width 0.6s ease;
+}
+
+ul {
+	list-style:square;
+}
+
+li {
+	padding:0 20px 10px 0;
+}
+
+#pie {
+	text-align:center;
+	background-color:#CCCCCC;
+	color:#fff;
+	padding:5px;
+}
+
+#contenedorimagen:hover {width:650px;
+						cursor:pointer}
+

@@ -1,0 +1,99 @@
+:root {
+    --color1: #2ecc71;
+    --color2: #3498db;
+    --color3: #e74c3c;
+    --fondo: #ecf0f1;
+}
+
+body {  
+	font-family: sans-serif; 
+	background: var(--fondo); 
+	margin: 0; 
+	padding: 20px; 
+}
+
+:root {
+    --primario: #3498db;
+    --fondo-celda: #ffffff;
+    --borde: #dcdde1;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    padding: 40px;
+}
+
+/* EL CONTENEDOR PRINCIPAL */
+.grid-tabla {
+    display: grid;
+    gap: 10px;
+    /* Definimos 5 columnas iguales */
+    grid-template-columns: repeat(5, 1fr);
+    /* Definimos las filas: cabecera, 3 filas de datos y pie */
+    grid-template-rows: auto repeat(3, 100px) auto;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ESTILO DE CABECERA Y PIE */
+.header-tabla, .footer-tabla {
+    grid-column: 1 / 6; /* Importante: de la línea 1 a la 6 para cubrir 5 columnas */
+    background-color: #2f3640;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.footer-tabla {
+    background-color: #7f8c8d;
+}
+
+/* ESTILO DE LAS CELDAS DE DATOS */
+.celda {
+    background-color: var(--fondo-celda);
+    border: 1px solid var(--borde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primario);
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+/* Efecto visual al pasar el ratón */
+.celda:hover {
+    background-color: #ebf5fb;
+    transform: scale(1.02);
+    border-color: var(--primario);
+}
+
+/*MEDIA QUERY PARA MÓVIL (Punto de ruptura 600px)*/
+@media screen and (max-width: 600px) {
+    body {
+        padding: 20px; /* Reducimos el padding general para ganar espacio en pantallas pequeñas */
+    }
+
+    .grid-tabla {
+        grid-template-columns: 1fr; /* Pasamos de 5 columnas a 1 sola columna */
+        grid-template-rows: auto;   /* Reseteamos el formato rígido de filas del desktop */
+        gap: 8px;                   /* Opcional: reducimos ligeramente el espacio entre celdas */
+    }
+
+    /* Modificamos la cabecera y el pie para que se adapten a la nueva columna única */
+    .header-tabla, .footer-tabla {
+        grid-column: 1 / -1; /* Ocupa desde la primera línea hasta la última (toda la anchura) */
+        padding: 15px;       /* Ajustamos el padding para pantallas pequeñas */
+    }
+
+    /* Le damos una altura estilizada a las celdas numéricas */
+    .celda {
+        padding: 12px 0;     /* Al no tener los 100px fijos por fila, el padding les da una altura limpia y uniforme */
+        font-size: 1.3rem;   /* Reducimos un poco el tamaño de fuente para que sea más armónico en móvil */
+    }
+}
+

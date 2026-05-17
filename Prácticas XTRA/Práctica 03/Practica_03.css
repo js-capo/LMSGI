@@ -1,0 +1,79 @@
+:root {
+    --color1: #2ecc71;
+    --color2: #3498db;
+    --color3: #e74c3c;
+    --fondo: #ecf0f1;
+}
+
+body {  
+	font-family: sans-serif; 
+	background: var(--fondo); 
+	margin: 0; 
+	padding: 20px; 
+}
+
+/* CONFIGURACIÓN DEL GRID */
+.grid-layout {
+    display: grid; /* Activamos Grid */
+    gap: 15px; /* Espacio entre celdas (huecos) */
+    
+    /* Definimos 3 columnas de igual tamaño */
+    grid-template-columns: 1fr 1fr 1fr; 
+    
+    /* Definimos filas de tamaño automático según contenido */
+    grid-template-rows: auto;
+}
+
+/* Estilos básicos para los hijos */
+.item {
+    background: white;
+    padding: 20px;
+    border: 2px solid #ddd;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* PRUEBAS DE POSICIONAMIENTO */
+
+.header {
+    background: var(--color2);
+    color: white;
+    /* Queremos que ocupe las 3 columnas */
+    /* grid-column: 1 / 4;  Con el 1 le decimos la línea divisoria tras la que empieza este elemento y el 4 son las 4 líneas divisorias o bordes que harían falta para definir 3 columnas. Podríamos poner grid-column: 1 / span 3; que sería como decir, empieza en la 1 y te expandes 3*/
+	grid-column:1 / span 3; 
+	
+}
+
+.sidebar { background: #f9f9f9; }
+
+.content { 
+    background: var(--color1); 
+    color: white;
+    /* Queremos que ocupe 2 columnas */
+    grid-column: 2 / 4; 
+}
+
+.footer {
+    background: #333;
+    color: white;
+    grid-column: 1 / 4; /* Igual que en header*/ 
+}
+
+/* PASO 3.- Media Query para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    
+    .grid-layout {
+        /* Cambiamos a una sola columna */
+        grid-template-columns: 1fr; 
+    }
+
+    /* Forzamos a que todos los elementos ocupen esa única columna */
+    .header, 
+    .sidebar, 
+    .content, 
+    .extra, 
+    .footer {
+        grid-column: 1;
+    }
+}
